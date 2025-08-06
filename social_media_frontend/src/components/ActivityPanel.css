@@ -1,0 +1,39 @@
+.activity-panel {
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  padding: 1.5rem 1rem;
+  min-width: 200px;
+  max-width: 270px;
+  height: calc(100vh - 60px);
+  position: sticky;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.activity-panel-title {
+  font-size: 1.1rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+.activity-item {
+  font-size: 0.98rem;
+  padding: 7px 0;
+  color: #424242;
+  border-bottom: 1px solid var(--border-color);
+}
+.activity-placeholder {
+  color: #bbb;
+  font-style: italic;
+  margin-top: 1rem;
+}
+@media (max-width: 900px) {
+  .activity-panel { display: none; }
+}
